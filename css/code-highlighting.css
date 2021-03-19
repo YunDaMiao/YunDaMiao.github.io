@@ -1,7 +1,7 @@
 /* This Code Highlighting Theme is based on GitHub Theme */
 
 .gutter {
-    color: var(--dark);
+    color: var(--grey);
     user-select: none;
 }
 
