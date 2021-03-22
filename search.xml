@@ -250,4 +250,26 @@
 <p>d 的全拼应该是 daemon，也就是守护程序的意思，常驻于后台。</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>backup_db.sh</title>
+    <url>/2021/03/22/backup-db-sh/</url>
+    <content><![CDATA[<p>#!/bin/bash<br>#0 0 * * *    sh /home/backup_db.sh</p>
+<p>source /etc/profile</p>
+<p>user=”root”<br>pass=”root”<br>db=”zabbix”<br>backup_dir=”/home/backup”</p>
+<p>date=$(date +%Y%m%d%H%M%S)</p>
+<p>mysqlpump=<code>which mysqlpump</code></p>
+<p>if [ -d “${backup_dir}” ];then<br>    echo “backup mysql ${db} to ${backup_dir}”</p>
+<pre><code>/usr/local/mysql/bin/mysqlpump -u$&#123;user&#125; -p$&#123;pass&#125; --set-gtid-purged=off --default-character-set=utf8 --single-transaction --complete-insert --max_allowed_packet=32M --default-parallelism=5 -B $&#123;db&#125; --log-error-file=$&#123;backup_dir&#125;/$&#123;db&#125;.$date.log &gt; $&#123;backup_dir&#125;/$&#123;db&#125;.$date.sql
+
+
+find /home/backup -type f -mtime +30 -name &quot;*.sql&quot; -exec rm -f &#123;&#125; \;
+find /home/backup -type f -mtime +30 -name &quot;*.log&quot; -exec rm -f &#123;&#125; \;
+</code></pre>
+<p>else<br>    mkdir -p ${backup_dir}<br>    ls -lh ${backup_dir}</p>
+<p>fi</p>
+]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+  </entry>
 </search>
