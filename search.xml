@@ -280,4 +280,14 @@ find /home/backup -type f -mtime +30 -name &quot;*.log&quot; -exec rm -f &#123;&
 <p>开机自启动<br>sudo systemctl enable docker</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>docker内部基础服务安装</title>
+    <url>/2021/03/24/docker%E5%86%85%E9%83%A8%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<p>docker容器内apt换源<br>mv /etc/apt/sources.list /etc/apt/sources.list.bak</p>
+<p>cat &lt;<EOF >/etc/apt/sources.list<br>deb <a href="http://mirrors.ustc.edu.cn/debian">http://mirrors.ustc.edu.cn/debian</a> stable main contrib non-free<br>deb <a href="http://mirrors.ustc.edu.cn/debian">http://mirrors.ustc.edu.cn/debian</a> stable-updates main contrib non-free<br>EOF</p>
+<p>cat &lt;<EOF >/etc/apt/sources.list<br>deb <a href="http://mirrors.163.com/debian/">http://mirrors.163.com/debian/</a> jessie main non-free contrib<br>deb <a href="http://mirrors.163.com/debian/">http://mirrors.163.com/debian/</a> jessie-proposed-updates main non-free contrib<br>deb-src <a href="http://mirrors.163.com/debian/">http://mirrors.163.com/debian/</a> jessie main non-free contrib<br>deb-src <a href="http://mirrors.163.com/debian/">http://mirrors.163.com/debian/</a> jessie-proposed-updates main non-free contrib<br>EOF</p>
+<p>apt update</p>
+<p>apt-get update<br>安装yum<br>apt-get install yum -y<br>安装vim<br>apt-get install vim -y<br>安装ping<br>apt install iputils-ping -y<br>安装ps<br>apt-get install procps -y<br>安装ifconfig<br>apt-get install net-tools<br>安装sudo<br>apt-get install sudo<br>安装crontab<br>apt-get install cron<br>service cron status –查看cron的状态<br>service cron restart –重启crontab服务</p>
+]]></content>
+  </entry>
 </search>
