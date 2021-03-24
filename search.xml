@@ -272,4 +272,12 @@ find /home/backup -type f -mtime +30 -name &quot;*.log&quot; -exec rm -f &#123;&
         <category>数据库</category>
       </categories>
   </entry>
+  <entry>
+    <title>ubuntu——docker安装</title>
+    <url>/2021/03/24/ubuntu%E2%80%94%E2%80%94docker%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<p>apt-get update<br>apt  install docker.io<br>docker version</p>
+<p>安装指定版本或CE版本<br><a href="https://www.cnblogs.com/chengmf/p/13122013.html">https://www.cnblogs.com/chengmf/p/13122013.html</a></p>
+<p>开机自启动<br>sudo systemctl enable docker</p>
+]]></content>
+  </entry>
 </search>
