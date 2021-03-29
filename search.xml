@@ -323,7 +323,10 @@ find /home/backup -type f -mtime +30 -name &quot;*.log&quot; -exec rm -f &#123;&
 <p>   <code>source /etc/profile</code></p>
 <p>9.使用无密码登录，添加登录密码</p>
 <p>   <code>mysql</code></p>
-<p>​     无密码登录使用如下命令：<br>   <code>ALTER USER root@localhost IDENTIFIED VIA mysql_native_password USING PASSWORD(&quot;admin&quot;);</code><br>   <code>flush privileges;</code><br>​     之后用密码正常登录即可</p>
+<p>​     无密码登录使用如下命令：</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ALTER USER root@localhost IDENTIFIED VIA mysql_native_password USING PASSWORD(&quot;admin&quot;);</span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
+
+<p>​    之后用密码正常登录即可</p>
 ]]></content>
       <categories>
         <category>数据库</category>
