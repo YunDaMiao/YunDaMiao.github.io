@@ -313,7 +313,7 @@ find /home/backup -type f -mtime +30 -name &quot;*.log&quot; -exec rm -f &#123;&
 
 
 
-<p>5.初始化数据库<br>   <code>/usr/local/mysql/scripts/mysql_install_db --basedir=/usr/local/mysql --datadir=/data/mysql/data --user=mysql</code><br>6.设置启动文件<br>   <code>cp /usr/local/mysql/support-files/mysql.server /etc/init.d/mysql</code><br>     把依赖包libtinfo.so.5放在该目录下<br>   <code>cd /lib/x86_64-linux-gnu/</code></p>
+<p>5.初始化数据库<br>   <code>/usr/local/mysql/scripts/mysql_install_db --basedir=/usr/local/mysql --datadir=/data/mysql/data --user=mysql</code><br>6.设置启动文件<br>   <code>cp /usr/local/mysql/support-files/mysql.server /etc/init.d/mysql</code><br>       把依赖包libtinfo.so.5放在该目录下<br>   <code>cd /lib/x86_64-linux-gnu/</code></p>
 <p>7.启动数据库<br>   <code>/etc/init.d/mysql start</code><br>8.配置环境变量<br>   <code>vim /etc/profile</code></p>
    <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">###在最后面添加</span></span></span><br><span class="line">export MYSQL_HOME=/usr/local/mysql</span><br><span class="line">export PATH=$MYSQL_HOME/bin:$PATH</span><br></pre></td></tr></table></figure>
 
