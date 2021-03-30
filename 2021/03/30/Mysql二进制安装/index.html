@@ -3,9 +3,10 @@
 <p>​    <code>rpm -qa |grep mariadb</code></p>
 <p>​    <code>yum -y remove mariadb-libs</code></p>
 <p>2.路径规划与创建</p>
-<p>   软件安装目录                  /usr/local/mysql/<br>   数据文件存储位置              /data/mysql/date/3306<br>   日志文件存储位置              /data/mysql/logs/3306<br>   binlog文件存储位置            /data/mysql/binlog/3306<br>   缓存目录位置                  /data/mysql/tmp/3306</p>
-   <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /data/mysql/date/3306</span><br><span class="line">mkdir -p /data/mysql/logs/3306</span><br><span class="line">mkdir -p /data/mysql/binlog/3306</span><br><span class="line">mkdir -p /data/mysql/tmp/3306</span><br></pre></td></tr></table></figure>
+<p>   软件安装目录                  /usr/local/mysql/<br>   数据文件存储位置           /data/mysql/date/3306<br>   日志文件存储位置           /data/mysql/logs/3306<br>   binlog文件存储位置        /binlog/3306<br>   缓存目录位置                  /data/mysql/tmp/3306</p>
+   <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /data/mysql/date/3306</span><br><span class="line">mkdir -p /data/mysql/logs/3306</span><br><span class="line">mkdir -p /binlog/3306</span><br><span class="line">mkdir -p /data/mysql/tmp/3306</span><br></pre></td></tr></table></figure>
 
+<p>​     正式环境软件安装目录、数据文件存储目录、binlog文件目录应该分别放在三个磁盘上</p>
 <p>3.创建用户配置权限</p>
    <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">useradd mysql -s /sbin/nologin		#创建mysql用户和组，不需要其登录系统</span><br><span class="line">id mysql				#查看用户和属组信息</span><br></pre></td></tr></table></figure>
 
