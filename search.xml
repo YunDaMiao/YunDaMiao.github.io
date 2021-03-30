@@ -291,9 +291,10 @@ find /home/backup -type f -mtime +30 -name &quot;*.log&quot; -exec rm -f &#123;&
 ]]></content>
   </entry>
   <entry>
-    <title>MariaDB二进制安装</title>
+    <title>MariaDB 10.5.8 二进制安装</title>
     <url>/2021/03/29/MariaDB%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<p>1.路径规划与创建</p>
+    <content><![CDATA[<p>基于Ubuntu20.04.01</p>
+<p>1.路径规划与创建</p>
 <p>   数据文件存储位置               /data/mysql/data<br>   日志文件存储位置               /data/logs/mysql<br>   binlog文件存储位置             /data/mysql<br>   缓存目录位置                   /dta/tmp</p>
    <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir -p /data/mysql/data</span><br><span class="line">mkdir -p /data/logs/mysql</span><br><span class="line">mkdir -p /data/logs/tmp</span><br><span class="line">mkdir -p /data/tmp</span><br></pre></td></tr></table></figure>
 
@@ -333,6 +334,24 @@ find /home/backup -type f -mtime +30 -name &quot;*.log&quot; -exec rm -f &#123;&
       </categories>
       <tags>
         <tag>MariaDB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mysql 5.7 二进制安装</title>
+    <url>/2021/03/30/Mysql%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<p>基于Centos7.6</p>
+<p>1.路径规划与创建</p>
+<p>​    软件安装目录                    /usr/local/mysql/   </p>
+<p>   日志文件存储目录              /data/mysql/logs/3306<br>   日志文件存储目录              /data/mysql/logs/3306<br>   binlog文件存储目录           /data/mysql/binlog/3306<br>   缓存目录目录                      /data/mysql/tmp/3306</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir -p /data/mysql/date/3306</span><br><span class="line">mkdir -p /data/mysql/logs/3306</span><br><span class="line">mkdir -p /data/mysql/binlog/3306</span><br><span class="line">mkdir -p /data/mysql/tmp/3306</span><br></pre></td></tr></table></figure>
+
+<p>2.创建用户配置权限</p>
+]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>Mysql</tag>
       </tags>
   </entry>
 </search>
