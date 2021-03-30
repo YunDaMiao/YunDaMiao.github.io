@@ -348,7 +348,7 @@ find /home/backup -type f -mtime +30 -name &quot;*.log&quot; -exec rm -f &#123;&
    <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir -p /data/mysql/date/3306</span><br><span class="line">mkdir -p /data/mysql/logs/3306</span><br><span class="line">mkdir -p /data/mysql/binlog/3306</span><br><span class="line">mkdir -p /data/mysql/tmp/3306</span><br></pre></td></tr></table></figure>
 
 <p>3.创建用户配置权限</p>
-   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">useradd mysql -s /sbin/nologin		#创建mysql用户和组，不需要其登录系统</span><br><span class="line">id mysql							#查看用户和属组信息</span><br></pre></td></tr></table></figure>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">useradd mysql -s /sbin/nologin		#创建mysql用户和组，不需要其登录系统</span><br><span class="line">id mysql			#查看用户和属组信息</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
