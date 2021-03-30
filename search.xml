@@ -341,8 +341,7 @@ find /home/backup -type f -mtime +30 -name &quot;*.log&quot; -exec rm -f &#123;&
     <url>/2021/03/30/Mysql%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<p>基于Centos7.6</p>
 <p>1.路径规划与创建</p>
-<p>​    软件安装目录                    /usr/local/mysql/   </p>
-<p>   日志文件存储目录              /data/mysql/logs/3306<br>   日志文件存储目录              /data/mysql/logs/3306<br>   binlog文件存储目录           /data/mysql/binlog/3306<br>   缓存目录目录                      /data/mysql/tmp/3306</p>
+<p>   软件安装目录                  /usr/local/mysql/<br>   数据文件存储位置              /data/mysql/date/3306<br>   日志文件存储位置              /data/mysql/logs/3306<br>   binlog文件存储位置            /data/mysql/binlog/3306<br>   缓存目录位置                  /data/mysql/tmp/3306</p>
    <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir -p /data/mysql/date/3306</span><br><span class="line">mkdir -p /data/mysql/logs/3306</span><br><span class="line">mkdir -p /data/mysql/binlog/3306</span><br><span class="line">mkdir -p /data/mysql/tmp/3306</span><br></pre></td></tr></table></figure>
 
 <p>2.创建用户配置权限</p>
