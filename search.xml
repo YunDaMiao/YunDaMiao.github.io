@@ -340,7 +340,7 @@ find /home/backup -type f -mtime +30 -name &quot;*.log&quot; -exec rm -f &#123;&
     <title>Mysql 5.7 二进制安装</title>
     <url>/2021/03/30/Mysql%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<p>基于Centos7.6</p>
-<p>1.清理MariaBD环境**(MariaDB与MySQL可能会有冲突)**</p>
+<p>1.清理MariaBD环境(MariaDB与MySQL可能会有冲突)</p>
 <p>​    <code>rpm -qa |grep mariadb</code></p>
 <p>​    <code>yum -y remove mariadb-libs</code></p>
 <p>2.路径规划与创建</p>
