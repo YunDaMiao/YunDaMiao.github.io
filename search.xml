@@ -52,7 +52,9 @@ find /home/backup -type f -mtime +30 -name &quot;*.log&quot; -exec rm -f &#123;&
   <entry>
     <title>MariaDB 10.5.8 二进制安装</title>
     <url>/2021/03/29/MariaDB%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<p>基于Ubuntu20.04.01</p>
+    <content><![CDATA[<ul>
+<li>基于Ubuntu20.04.01</li>
+</ul>
 <p>1.路径规划与创建</p>
 <p>   数据文件存储位置               /data/mysql/data<br>   日志文件存储位置               /data/logs/mysql<br>   binlog文件存储位置             /data/mysql<br>   缓存目录位置                   /dta/tmp</p>
    <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir -p /data/mysql/data</span><br><span class="line">mkdir -p /data/logs/mysql</span><br><span class="line">mkdir -p /data/logs/tmp</span><br><span class="line">mkdir -p /data/tmp</span><br></pre></td></tr></table></figure>
