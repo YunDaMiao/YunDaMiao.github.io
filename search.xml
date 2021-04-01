@@ -151,4 +151,17 @@ find /home/backup -type f -mtime +30 -name &quot;*.log&quot; -exec rm -f &#123;&
         <tag>Mysql</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Cento6.8部署Zabbix4.0</title>
+    <url>/2021/04/01/Cento6.8%E9%83%A8%E7%BD%B2Zabbix4.0/</url>
+    <content><![CDATA[<p>1.Install or upgrade an existing system</p>
+<p>   <img src="C:\Users\86177\AppData\Roaming\Typora\typora-user-images\image-20210401154238919.png" alt="image-20210401154238919"></p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Zabbix</tag>
+      </tags>
+  </entry>
 </search>
