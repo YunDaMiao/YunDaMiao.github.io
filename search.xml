@@ -1,55 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Mysql和Mysqld的区别</title>
-    <url>/2021/03/22/Mysql%E5%92%8CMysqld%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[<p>mysql 是个命令行程序。</p>
-<p>mysqld 是服务。</p>
-<p>linux 系统里一般的服务都是以 d 结尾的，比如 httpd，vsftpd 等等。</p>
-<p>d 的全拼应该是 daemon，也就是守护程序的意思，常驻于后台。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>backup_db.sh</title>
-    <url>/2021/03/22/backup-db-sh/</url>
-    <content><![CDATA[<p>#!/bin/bash<br>#0 0 * * *    sh /home/backup_db.sh</p>
-<p>source /etc/profile</p>
-<p>user=”root”<br>pass=”root”<br>db=”zabbix”<br>backup_dir=”/home/backup”</p>
-<p>date=$(date +%Y%m%d%H%M%S)</p>
-<p>mysqlpump=<code>which mysqlpump</code></p>
-<p>if [ -d “${backup_dir}” ];then<br>    echo “backup mysql ${db} to ${backup_dir}”</p>
-<pre><code>/usr/local/mysql/bin/mysqlpump -u$&#123;user&#125; -p$&#123;pass&#125; --set-gtid-purged=off --default-character-set=utf8 --single-transaction --complete-insert --max_allowed_packet=32M --default-parallelism=5 -B $&#123;db&#125; --log-error-file=$&#123;backup_dir&#125;/$&#123;db&#125;.$date.log &gt; $&#123;backup_dir&#125;/$&#123;db&#125;.$date.sql
-
-
-find /home/backup -type f -mtime +30 -name &quot;*.sql&quot; -exec rm -f &#123;&#125; \;
-find /home/backup -type f -mtime +30 -name &quot;*.log&quot; -exec rm -f &#123;&#125; \;
-</code></pre>
-<p>else<br>    mkdir -p ${backup_dir}<br>    ls -lh ${backup_dir}</p>
-<p>fi</p>
-]]></content>
-      <categories>
-        <category>数据库</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>ubuntu——docker安装</title>
-    <url>/2021/03/24/ubuntu%E2%80%94%E2%80%94docker%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<p>apt-get update<br>apt  install docker.io<br>docker version</p>
-<p>安装指定版本或CE版本<br><a href="https://www.cnblogs.com/chengmf/p/13122013.html">https://www.cnblogs.com/chengmf/p/13122013.html</a></p>
-<p>开机自启动<br>sudo systemctl enable docker</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>docker内部基础服务安装</title>
-    <url>/2021/03/24/docker%E5%86%85%E9%83%A8%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<p>docker容器内apt换源<br>mv /etc/apt/sources.list /etc/apt/sources.list.bak</p>
-<p>cat &lt;<EOF >/etc/apt/sources.list<br>deb <a href="http://mirrors.ustc.edu.cn/debian">http://mirrors.ustc.edu.cn/debian</a> stable main contrib non-free<br>deb <a href="http://mirrors.ustc.edu.cn/debian">http://mirrors.ustc.edu.cn/debian</a> stable-updates main contrib non-free<br>EOF</p>
-<p>cat &lt;<EOF >/etc/apt/sources.list<br>deb <a href="http://mirrors.163.com/debian/">http://mirrors.163.com/debian/</a> jessie main non-free contrib<br>deb <a href="http://mirrors.163.com/debian/">http://mirrors.163.com/debian/</a> jessie-proposed-updates main non-free contrib<br>deb-src <a href="http://mirrors.163.com/debian/">http://mirrors.163.com/debian/</a> jessie main non-free contrib<br>deb-src <a href="http://mirrors.163.com/debian/">http://mirrors.163.com/debian/</a> jessie-proposed-updates main non-free contrib<br>EOF</p>
-<p>apt update</p>
-<p>apt-get update<br>安装yum<br>apt-get install yum -y<br>安装vim<br>apt-get install vim -y<br>安装ping<br>apt install iputils-ping -y<br>安装ps<br>apt-get install procps -y<br>安装ifconfig<br>apt-get install net-tools<br>安装sudo<br>apt-get install sudo<br>安装crontab<br>apt-get install cron<br>service cron status –查看cron的状态<br>service cron restart –重启crontab服务</p>
-]]></content>
-  </entry>
-  <entry>
     <title>MariaDB 10.5.8 二进制安装</title>
     <url>/2021/03/29/MariaDB%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<ul>
