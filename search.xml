@@ -108,8 +108,7 @@
     <content><![CDATA[<ul>
 <li><p>基于Ubuntu20.04.01</p>
 <p>1.docker容器内apt换源</p>
-<p><code>mv /etc/apt/sources.list /etc/apt/sources.list.bak</code></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat &lt;&lt;EOF &gt;/etc/apt/sources.list</span><br><span class="line">deb http://mirrors.ustc.edu.cn/debian stable main contrib non-free</span><br><span class="line">deb http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">备份源文件</span></span><br><span class="line">mv /etc/apt/sources.list /etc/apt/sources.list.bak</span><br><span class="line"><span class="meta">#</span><span class="bash">导入源地址</span></span><br><span class="line">cat &lt;&lt;EOF &gt;/etc/apt/sources.list</span><br><span class="line">deb http://mirrors.ustc.edu.cn/debian stable main contrib non-free</span><br><span class="line">deb http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
 
 <p>or</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat &lt;&lt;EOF &gt;/etc/apt/sources.list</span><br><span class="line">deb http://mirrors.163.com/debian/ jessie main non-free contrib</span><br><span class="line">deb http://mirrors.163.com/debian/ jessie-proposed-updates main non-free contrib</span><br><span class="line">deb-src http://mirrors.163.com/debian/ jessie main non-free contrib</span><br><span class="line">deb-src http://mirrors.163.com/debian/ jessie-proposed-updates main non-free contrib</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
