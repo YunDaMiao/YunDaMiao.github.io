@@ -11,7 +11,7 @@
    <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mkdir -p /data/mysql/data</span><br><span class="line">mkdir -p /data/logs/mysql</span><br><span class="line">mkdir -p /data/logs/tmp</span><br><span class="line">mkdir -p /data/tmp</span><br></pre></td></tr></table></figure>
 
 <p>2.创建用户配置权限</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">useradd mysql</span><br><span class="line">chown -R mysql:mysql /data/mysql</span><br><span class="line">chown -R mysql:mysql /data/logs</span><br><span class="line">chown -R mysql:mysql /data/tmp</span><br><span class="line">chmod -R 775 /data/mysql</span><br><span class="line">chmod -R 775 /data/logs</span><br><span class="line">chmod -R 775 /data/tmp```</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">useradd mysql</span><br><span class="line">chown -R mysql:mysql /data/mysql</span><br><span class="line">chown -R mysql:mysql /data/logs</span><br><span class="line">chown -R mysql:mysql /data/tmp</span><br><span class="line">chmod -R 775 /data/mysql</span><br><span class="line">chmod -R 775 /data/logs</span><br><span class="line">chmod -R 775 /data/tmp</span><br></pre></td></tr></table></figure>
 
 <p>3.上传安装包与依赖包并解压</p>
 <p>   安装包：</p>
@@ -254,6 +254,22 @@
       </categories>
       <tags>
         <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mysql中CS模型与实例介绍</title>
+    <url>/2021/04/14/Mysql%E4%B8%ADCS%E6%A8%A1%E5%9E%8B%E4%B8%8E%E5%AE%9E%E4%BE%8B%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<p>1.C/S(客户端/服务端)模型介绍</p>
+<p>   <img src="https://upload-images.jianshu.io/upload_images/16956686-301b140a033d0dd2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/712/format/webp" alt="img"></p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mysql两种连接方式：</span><br><span class="line"><span class="meta">#</span><span class="bash">TCP/IP方式（远程、本地）：</span></span><br><span class="line">mysql -u用户名 -p密码 -h 10.0.0.51 -P3306</span><br><span class="line"><span class="meta">#</span><span class="bash">Socket方式(仅本地)：</span></span><br><span class="line">mysql -u用户名 -p密码 -S /tmp/mysql.sock</span><br></pre></td></tr></table></figure>
+
+<p>2.实例介绍</p>
+]]></content>
+      <categories>
+        <category>Database</category>
+      </categories>
+      <tags>
+        <tag>Mysql</tag>
       </tags>
   </entry>
 </search>
