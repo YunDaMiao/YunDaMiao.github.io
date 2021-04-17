@@ -325,12 +325,20 @@
       </tags>
   </entry>
   <entry>
-    <title>Redhat8.0更改yum源</title>
-    <url>/2021/04/18/Redhat8-0%E6%9B%B4%E6%94%B9yum%E6%BA%90/</url>
+    <title>Redhat8.0更改网卡配置、关闭防火墙和Selinux、配置yum在线源</title>
+    <url>/2021/04/18/Redhat8.0%E6%9B%B4%E6%94%B9%E7%BD%91%E5%8D%A1%E9%85%8D%E7%BD%AE%E3%80%81%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99%E5%92%8CSelinux%E3%80%81%E9%85%8D%E7%BD%AEyum%E5%9C%A8%E7%BA%BF%E6%BA%90/</url>
     <content><![CDATA[<ul>
-<li><p>基于Redhat8.3</p>
- <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /etc/yum.repos.d/</span><br><span class="line"><span class="meta">#</span><span class="bash">下载阿里云yum源</span></span><br><span class="line">curl -o /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-8.repo</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">将redhat源做备份</span></span><br><span class="line">mv redhat.repo redhat.repo_bak</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">这个时候已经可以使用阿里云yum源，但是还是会有注册提示，可以忽略,通过修改以下两个文件的Enable=0来禁用Subscription Management提示</span></span><br><span class="line">vi /etc/yum/pluginconf.d/product-id.conf</span><br><span class="line">enabled=0</span><br><span class="line">vi /etc/yum/pluginconf.d/subscription-manager.conf</span><br><span class="line">enabled=0</span><br><span class="line">yum clean all</span><br><span class="line">yum makecache</span><br></pre></td></tr></table></figure></li>
+<li>基于Redhat8.3</li>
 </ul>
+<p>1.更改网卡配置</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /etc/sysconfig/network-scripts/ifcfg-ens160</span><br><span class="line"></span><br><span class="line">TYPE=Ethernet</span><br><span class="line">PROXY_METHOD=none</span><br><span class="line">BROWSER_ONLY=no</span><br><span class="line">BOOTPROTO=static</span><br><span class="line">DEFROUTE=yes</span><br><span class="line">IPV4_FAILURE_FATAL=yes</span><br><span class="line">IPV6INIT=yes</span><br><span class="line">IPV6_AUTOCONF=yes</span><br><span class="line">IPV6_DEFROUTE=yes</span><br><span class="line">IPV6_FAILURE_FATAL=no</span><br><span class="line">IPV6_ADDR_GEN_MODE=stable-privacy</span><br><span class="line">NAME=ens160</span><br><span class="line">UUID=68255cd4-e394-4148-988b-00a08efaf039</span><br><span class="line">DEVICE=ens160</span><br><span class="line">ONBOOT=yes</span><br><span class="line">IPADDR=192.168.3.191</span><br><span class="line">PREFIX=24</span><br><span class="line">GATEWAY=192.168.3.1</span><br><span class="line">NETMASK=255.255.255.0</span><br><span class="line">DNS1=114.114.114.114</span><br><span class="line">IPV6_PRIVACY=no</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">使用nmcli载入网络配置并生效</span></span><br><span class="line">nmcli c reload</span><br></pre></td></tr></table></figure>
+
+<p>2.关闭防火墙和Selinux</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl status firewalld</span><br><span class="line">vim /etc/selinux/config</span><br><span class="line">SELINUX=disabled</span><br><span class="line">init 6</span><br></pre></td></tr></table></figure>
+
+<p>3.更改yum源</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /etc/yum.repos.d/</span><br><span class="line"><span class="meta">#</span><span class="bash">下载阿里云yum源</span></span><br><span class="line">curl -o /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-8.repo</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">将redhat源做备份</span></span><br><span class="line">mv redhat.repo redhat.repo_bak</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">这个时候已经可以使用阿里云yum源，但是还是会有注册提示，可以忽略,通过修改以下两个文件的Enable=0来禁用Subscription Management提示</span></span><br><span class="line">vi /etc/yum/pluginconf.d/product-id.conf</span><br><span class="line">enabled=0</span><br><span class="line">vi /etc/yum/pluginconf.d/subscription-manager.conf</span><br><span class="line">enabled=0</span><br><span class="line">yum clean all</span><br><span class="line">yum makecache</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>Linux</category>
