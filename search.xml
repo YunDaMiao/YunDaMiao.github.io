@@ -325,8 +325,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Redhat8.0更改网卡配置、关闭防火墙和Selinux、配置yum在线源</title>
-    <url>/2021/04/18/Redhat8.0%E6%9B%B4%E6%94%B9%E7%BD%91%E5%8D%A1%E9%85%8D%E7%BD%AE%E3%80%81%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99%E5%92%8CSelinux%E3%80%81%E9%85%8D%E7%BD%AEyum%E5%9C%A8%E7%BA%BF%E6%BA%90/</url>
+    <title>Redhat8.0网卡配置、关闭防火墙和Selinux、配置yum在线源</title>
+    <url>/2021/04/18/Redhat8.0%E7%BD%91%E5%8D%A1%E9%85%8D%E7%BD%AE%E3%80%81%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99%E5%92%8CSelinux%E3%80%81%E9%85%8D%E7%BD%AEyum%E5%9C%A8%E7%BA%BF%E6%BA%90/</url>
     <content><![CDATA[<ul>
 <li>基于Redhat8.3</li>
 </ul>
