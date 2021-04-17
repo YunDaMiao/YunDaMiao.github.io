@@ -325,8 +325,28 @@
       </tags>
   </entry>
   <entry>
-    <title>Redhat8.0网卡配置、关闭防火墙和Selinux、配置yum在线源</title>
-    <url>/2021/04/18/Redhat8.0%E7%BD%91%E5%8D%A1%E9%85%8D%E7%BD%AE%E3%80%81%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99%E5%92%8CSelinux%E3%80%81%E9%85%8D%E7%BD%AEyum%E5%9C%A8%E7%BA%BF%E6%BA%90/</url>
+    <title>Redhat8.3在线安装MariaDB</title>
+    <url>/2021/04/17/Redhat8.3%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85MariaDB/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Redhat8.3在线安装Docker</title>
+    <url>/2021/04/20/Redhat8.3%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85Docker/</url>
+    <content><![CDATA[<ul>
+<li><p>基于Redhat8.3</p>
+ <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">1.确认是否有旧版本docker。有的话卸载</span><br><span class="line">yum list installed | grep docker （查询）</span><br><span class="line">yum remove -y docker-ce.x86_64 docker-client.x86_64 docker-common.x86_64（卸载）</span><br><span class="line">2.安装需要的依赖包</span><br><span class="line">yum install -y yum-utils device-mapper-persistent-data lvm2</span><br><span class="line">yum install -y epel-release</span><br><span class="line">3.添加阿里云库</span><br><span class="line">yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br><span class="line">4.安装插件</span><br><span class="line">dnf install https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.4.3-3.1.el7.x86_64.rpm</span><br><span class="line"><span class="meta">#</span><span class="bash">更换环境如果报错缺失某个containerd.io版本，可以到连接中更换版本地址在线安装</span></span><br><span class="line">5.安装docker</span><br><span class="line">yum install -y docker-ce</span><br><span class="line">6.启动docker并检测：</span><br><span class="line">systemctl start docker.service</span><br><span class="line">docker version</span><br><span class="line">systemctl status docker</span><br><span class="line">systemctl enable docker.service（开机启动）</span><br><span class="line"></span><br><span class="line">-----------------------------------------</span><br><span class="line">1.安装docker-compose</span><br><span class="line">curl -L https://get.daocloud.io/docker/compose/releases/download/1.25.5/docker-compose-`uname -s`-`uname -m` &gt; /usr/local/bin/docker-compose</span><br><span class="line">2.更改权限</span><br><span class="line">chmod +x /usr/local/bin/docker-compose</span><br><span class="line">3.查看版本</span><br><span class="line">docker-compose --version</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Redhat8.3网卡配置、关闭防火墙和Selinux、配置yum在线源</title>
+    <url>/2021/04/18/Redhat8.3%E7%BD%91%E5%8D%A1%E9%85%8D%E7%BD%AE%E3%80%81%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99%E5%92%8CSelinux%E3%80%81%E9%85%8D%E7%BD%AEyum%E5%9C%A8%E7%BA%BF%E6%BA%90/</url>
     <content><![CDATA[<ul>
 <li>基于Redhat8.3</li>
 </ul>
