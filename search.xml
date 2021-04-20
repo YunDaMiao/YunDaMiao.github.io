@@ -359,6 +359,9 @@
 <p>5.创建数据库实例</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">create database 数据库名称 charset utf8mb4;</span><br></pre></td></tr></table></figure>
 
+<p>6.查看数据库监听端口</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">netstat -antp|grep mysql|grep LISTEN</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>Database</category>
