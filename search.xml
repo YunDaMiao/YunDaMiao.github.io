@@ -441,4 +441,31 @@
         <tag>Mysql</tag>
       </tags>
   </entry>
+  <entry>
+    <title>MariaDB10.5.8配置主主模式</title>
+    <url>/2021/04/28/MariaDB10.5.8%E9%85%8D%E7%BD%AE%E4%B8%BB%E4%B8%BB%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<ul>
+<li>基于Ubuntu20.04.01</li>
+</ul>
+<p>1.主备机分别修改配置文件</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /etc/mysql/mariadb.cnf</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">主机备份原文件，清空之前配置，改为如下内容：</span></span><br><span class="line">[mysqld]</span><br><span class="line">datadir=/var/lib/mysql</span><br><span class="line">socket=/run/mysqld/mysqld.sock</span><br><span class="line">server-id=1</span><br><span class="line">log-bin=mysql-bin</span><br><span class="line">relay-log=mysql-relay-bin</span><br><span class="line">auto_increment_offset=1</span><br><span class="line">auto_increment_increment=2</span><br><span class="line">log_slave_updates =1</span><br><span class="line">replicate-wild-ignore-table=test.%</span><br><span class="line">replicate-wild-ignore-table=mysql.%</span><br><span class="line">replicate-wild-ignore-table=performance_schema.%</span><br><span class="line">slave-skip-errors=all</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">备机备份原文件，清空之前配置，改为如下内容：</span><br><span class="line">[mysqld]</span><br><span class="line">datadir=/var/lib/mysql</span><br><span class="line">socket=/run/mysqld/mysqld.sock</span><br><span class="line">server-id=2</span><br><span class="line">log-bin=mysql-bin</span><br><span class="line">relay-log=mysql-relay-bin</span><br><span class="line">auto_increment_offset=2</span><br><span class="line">auto_increment_increment=2</span><br><span class="line">log_slave_updates =1</span><br><span class="line">replicate-wild-ignore-table=test.%</span><br><span class="line">replicate-wild-ignore-table=mysql.%</span><br><span class="line">replicate-wild-ignore-table=performance_schema.%</span><br><span class="line">slave-skip-errors=all</span><br></pre></td></tr></table></figure>
+
+<p>2.sudo ufw disable 主从分别关闭防火墙</p>
+<p>3.主从分别重启数据库服务并查看服务状态</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl restart mariadb.service</span><br><span class="line">systemctl status mariadb.service</span><br></pre></td></tr></table></figure>
+
+<p>4.主从分别创建复制账户</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">创建slave用户密码为slave，从任意IP均可以登录。</span></span><br><span class="line"><span class="meta">#</span><span class="bash">要是需要创建其他密码，从指定IP登录为：grant replication slave on . to ‘slave’@‘192.168.100.%’ identified by ‘<span class="built_in">pwd</span>@123’;</span></span><br><span class="line">create user &#x27;slave&#x27;@&#x27;%&#x27; identified by &#x27;slave&#x27;;</span><br><span class="line">grant replication slave on *.* to slave@&#x27;%&#x27; identified by &#x27;slave&#x27;;</span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
+
+<p>5.配置主主复制文件</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">1&gt;</span><span class="bash">主机：</span></span><br><span class="line"></span><br><span class="line">flush tables with read lock;</span><br><span class="line">show master status;		#拿到file和position值</span><br><span class="line">unlock tables;</span><br><span class="line">此时在备机上设置</span><br><span class="line">change master to  master_host=&#x27;主机IP&#x27;, master_user=&#x27;slave&#x27;, master_password=&#x27;slave&#x27;, master_port=3306, master_log_file=&#x27;主机file文件名&#x27;, master_log_pos=主机position值;</span><br><span class="line">start slave;</span><br><span class="line"><span class="meta">#</span><span class="bash">查看配置状态</span></span><br><span class="line">show slave status \G</span><br><span class="line"><span class="meta">#</span><span class="bash">Slave_IO_Running: Yes与Slave_SQL_Running: Yes既正确</span></span><br><span class="line">如遇到报错Last_IO_Error: Got fatal error 1236 from master when reading data from binary log: &#x27;Could not find first log file name in binary log index file&#x27;</span><br><span class="line">解决办法：</span><br><span class="line">stop slave;</span><br><span class="line">reset slave;</span><br><span class="line">start slave;</span><br><span class="line"></span><br><span class="line"><span class="meta">2&gt;</span><span class="bash">备机：</span></span><br><span class="line"></span><br><span class="line">flush tables with read lock;</span><br><span class="line">show master status;		#拿到file和position值</span><br><span class="line">unlock tables;</span><br><span class="line">此时在主机上设置</span><br><span class="line">change master to  master_host=&#x27;备机IP&#x27;, master_user=&#x27;slave&#x27;, master_password=&#x27;slave&#x27;, master_port=3306, master_log_file=&#x27;备机file文件名&#x27;, master_log_pos=备机position值;</span><br><span class="line">start slave;</span><br><span class="line"><span class="meta">#</span><span class="bash">查看配置状态</span></span><br><span class="line">show slave status \G</span><br><span class="line"><span class="meta">#</span><span class="bash">Slave_IO_Running: Yes与Slave_SQL_Running: Yes既正确</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">如遇到报错Last_IO_Error: Got fatal error 1236 from master when reading data from binary <span class="built_in">log</span>: <span class="string">&#x27;Could not find first log file name in binary log index file&#x27;</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">解决办法：</span></span><br><span class="line">stop slave;</span><br><span class="line">reset slave;</span><br><span class="line">start slave;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Database</category>
+      </categories>
+      <tags>
+        <tag>MariaDB</tag>
+      </tags>
+  </entry>
 </search>
