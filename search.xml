@@ -529,4 +529,24 @@
         <tag>MariaDB</tag>
       </tags>
   </entry>
+  <entry>
+    <title>SQL基础应用-SQL介绍与SQL分类</title>
+    <url>/2021/05/04/SQL%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8-SQL%E4%BB%8B%E7%BB%8D%E4%B8%8ESQL%E5%88%86%E7%B1%BB/</url>
+    <content><![CDATA[<ul>
+<li>基于Centos7.6</li>
+</ul>
+<p>1.SQL介绍</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">结构化查询语言</span><br><span class="line">5.7 以后符合SQL92严格模式</span><br><span class="line">通过sql_mode参数来控制</span><br></pre></td></tr></table></figure>
+
+<p>2.常用SQL分类</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">DDL：数据定义语言</span><br><span class="line">DCL：数据控制语言</span><br><span class="line">DML：数据操作语言</span><br><span class="line">DQL：数据的查询语言</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Database</category>
+      </categories>
+      <tags>
+        <tag>Mysql</tag>
+      </tags>
+  </entry>
 </search>
