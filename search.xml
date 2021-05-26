@@ -603,12 +603,10 @@
   <entry>
     <title>Python开发环境搭建</title>
     <url>/2020/01/01/Python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>1.初衷</p>
-<p>   有些事不做会后悔，有些本事不学会被淘汰。既不想后悔也不想被淘汰，那么掌握一门开发语言看来是充分必要条件。</p>
-<p>2.安装python解释器</p>
+    <content><![CDATA[<p>1.安装python解释器</p>
    <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">https://www.python.org/ 选择适合的操作系统版本下载安装即可</span><br><span class="line">windows平台安装时注意勾选Add Python 3.9 to PATH 添加到环境变量中</span><br><span class="line">安装完成后在命令提示符界面输入python显示版本及安装完成</span><br></pre></td></tr></table></figure>
 
-<p>3.安装开发IDE</p>
+<p>2.安装开发IDE</p>
    <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">https://code.visualstudio.com/ 选择适合的操作系统版本下载安装即可</span><br><span class="line">打开VScode，按下快捷键Ctrl+Shift+X，进入插件管理页面。</span><br><span class="line">在搜索栏输入python。</span><br><span class="line">选择插件，点击安装。</span><br><span class="line">创建一个本地文件夹，作为项目文件。</span><br><span class="line">配置工作区域，点击设置，打开配置文件。</span><br><span class="line">配置flake8和yapf并关闭pylint工具。</span><br><span class="line">在工作区域输入以下内容：</span><br><span class="line">&#123;</span><br><span class="line">    &quot;python.linting.flake8Enabled&quot;: true,</span><br><span class="line">    &quot;python.formatting.provider&quot;: &quot;yapf&quot;,</span><br><span class="line">    &quot;python.linting.flake8Args&quot;: [&quot;--max-line-length=248&quot;],</span><br><span class="line">    &quot;python.linting.pylintEnabled&quot;: false</span><br><span class="line">&#125;</span><br><span class="line">新建一个python文件，输入一句print(&quot;Hello VScode&quot;)</span><br><span class="line">正常输出及安装完毕</span><br></pre></td></tr></table></figure>
 
 ]]></content>
