@@ -936,4 +936,30 @@
         <tag>Mysql</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Centos7设置开机自启MySQL服务</title>
+    <url>/2021/05/26/Centos7%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AFMySQL%E6%9C%8D%E5%8A%A1/</url>
+    <content><![CDATA[<ul>
+<li>环境基于Centos7.6</li>
+</ul>
+<p>1.确定mysql安装目录、mysqld服务与my.cnf文件位置</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">[root@localhost ~]# whereis mysql</span><br><span class="line">mysql: /usr/lib64/mysql /usr/local/mysql /usr/local/mysql/bin/mysql</span><br><span class="line"></span><br><span class="line">[root@localhost ~]# whereis mysqld</span><br><span class="line">mysqld: /usr/local/mysql/bin/mysqld</span><br><span class="line"></span><br><span class="line">[root@localhost local]# whereis my.cnf</span><br><span class="line">my: /etc/my.cnf</span><br></pre></td></tr></table></figure>
+
+<p>2.新建systemctl配置文件</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vi /usr/lib/systemd/system/mysql.service</span><br><span class="line"></span><br><span class="line">[Unit]</span><br><span class="line">Description=MySQL Server</span><br><span class="line">Documentation=man:mysqld</span><br><span class="line">Documentation=http://dev.mysql.com/doc/refman/en/using-systemd.html</span><br><span class="line">After=network.target</span><br><span class="line">After=syslog.target</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line">[Service]</span><br><span class="line">User=mysql</span><br><span class="line">Group=mysql</span><br><span class="line"><span class="meta">#</span><span class="bash">配置mysqld路径与my.cnf路径</span></span><br><span class="line">ExecStart=/usr/local/mysql/bin/mysqld --defaults-file=/etc/my.cnf</span><br><span class="line">LimitNOFILE = 5000</span><br><span class="line"><span class="meta">#</span><span class="bash">Restart=on-failure</span></span><br><span class="line"><span class="meta">#</span><span class="bash">RestartPreventExitStatus=1</span></span><br><span class="line"><span class="meta">#</span><span class="bash">PrivateTmp=<span class="literal">false</span></span></span><br></pre></td></tr></table></figure>
+
+<p>3.设置开机启动</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl enable mysql</span><br></pre></td></tr></table></figure>
+
+<p>4.验证</p>
+   <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">重启服务器</span></span><br><span class="line">init 6</span><br><span class="line"><span class="meta">#</span><span class="bash">查看MySQL状态</span></span><br><span class="line">[root@localhost ~]# systemctl status mysql</span><br><span class="line">● mysqld.service - LSB: start and stop MySQL</span><br><span class="line">   Loaded: loaded (/etc/rc.d/init.d/mysqld; bad; vendor preset: disabled)</span><br><span class="line">   Active: active (running) since Wed 2021-05-26 18:20:26 CST; 9s ago</span><br><span class="line">     Docs: man:systemd-sysv-generator(8)</span><br><span class="line">  Process: 1592 ExecStart=/etc/rc.d/init.d/mysqld start (code=exited, status=0/SUCCESS)</span><br><span class="line">    Tasks: 28</span><br><span class="line">   Memory: 225.5M</span><br><span class="line">   CGroup: /system.slice/mysqld.service</span><br><span class="line">           ├─1603 /bin/sh /usr/local/mysql/bin/mysqld_safe --datadir=/data/mysql/date/3306 --pid...</span><br><span class="line">           └─1771 /usr/local/mysql/bin/mysqld --basedir=/usr/local/mysql --datadir=/data/mysql/d...</span><br><span class="line"></span><br><span class="line">May 26 18:20:23 localhost.localdomain systemd[1]: Starting LSB: start and stop MySQL...</span><br><span class="line">May 26 18:20:26 localhost.localdomain mysqld[1592]: Starting MySQL... SUCCESS!</span><br><span class="line">May 26 18:20:26 localhost.localdomain systemd[1]: Started LSB: start and stop MySQL.</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Database</category>
+      </categories>
+      <tags>
+        <tag>Mysql</tag>
+      </tags>
+  </entry>
 </search>
