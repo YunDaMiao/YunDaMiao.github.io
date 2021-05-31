@@ -1002,7 +1002,7 @@
 <li>环境基于Centos7.6</li>
 </ul>
 <p>1.db表作用</p>
-<p>   存放与db库有关结构、权限等信息</p>
+<p>   存放与db库有关结构、权限等信息。</p>
 <p>2.db表查询</p>
    <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mysql<span class="operator">&gt;</span> <span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> db\G</span><br><span class="line"><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span> <span class="number">1.</span> <span class="type">row</span> <span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span></span><br><span class="line">                 Host: localhost</span><br><span class="line">                   Db: performance_schema</span><br><span class="line">                 <span class="keyword">User</span>: mysql.session</span><br><span class="line">          Select_priv: Y</span><br><span class="line">          Insert_priv: N</span><br><span class="line">          Update_priv: N</span><br><span class="line">          Delete_priv: N</span><br><span class="line">          Create_priv: N</span><br><span class="line">            Drop_priv: N</span><br><span class="line">           Grant_priv: N</span><br><span class="line">      References_priv: N</span><br><span class="line">           Index_priv: N</span><br><span class="line">           Alter_priv: N</span><br><span class="line">Create_tmp_table_priv: N</span><br><span class="line">     Lock_tables_priv: N</span><br><span class="line">     Create_view_priv: N</span><br><span class="line">       Show_view_priv: N</span><br><span class="line">  Create_routine_priv: N</span><br><span class="line">   Alter_routine_priv: N</span><br><span class="line">         Execute_priv: N</span><br><span class="line">           Event_priv: N</span><br><span class="line">         Trigger_priv: N</span><br><span class="line"><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span> <span class="number">2.</span> <span class="type">row</span> <span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span></span><br><span class="line">                 Host: localhost</span><br><span class="line">                   Db: sys</span><br><span class="line">                 <span class="keyword">User</span>: mysql.sys</span><br><span class="line">          Select_priv: N</span><br><span class="line">          Insert_priv: N</span><br><span class="line">          Update_priv: N</span><br><span class="line">          Delete_priv: N</span><br><span class="line">          Create_priv: N</span><br><span class="line">            Drop_priv: N</span><br><span class="line">           Grant_priv: N</span><br><span class="line">      References_priv: N</span><br><span class="line">           Index_priv: N</span><br><span class="line">           Alter_priv: N</span><br><span class="line">Create_tmp_table_priv: N</span><br><span class="line">     Lock_tables_priv: N</span><br><span class="line">     Create_view_priv: N</span><br><span class="line">       Show_view_priv: N</span><br><span class="line">  Create_routine_priv: N</span><br><span class="line">   Alter_routine_priv: N</span><br><span class="line">         Execute_priv: N</span><br><span class="line">           Event_priv: N</span><br><span class="line">         Trigger_priv: Y</span><br><span class="line"><span class="number">2</span> <span class="keyword">rows</span> <span class="keyword">in</span> <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></table></figure>
 
@@ -1011,6 +1011,257 @@
 <p>3.db表详解</p>
    <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">                 Host: localhost		#允许用户登录所使用的IP</span><br><span class="line">                   Db: performance_schema		#库名</span><br><span class="line">                 <span class="keyword">User</span>: mysql.session		#用户名</span><br><span class="line">          Select_priv: Y		#是否通过<span class="keyword">SELECT</span>命令查询数据</span><br><span class="line">          Insert_priv: N		#是否通过<span class="keyword">INSERT</span>命令插入数据</span><br><span class="line">          Update_priv: N		#是否通过UPDATE命令修改现有数据</span><br><span class="line">          Delete_priv: N		#是否通过<span class="keyword">DELETE</span>命令删除现有数据</span><br><span class="line">          Create_priv: N		#是否可以创建新的数据库和表</span><br><span class="line">            Drop_priv: N		#是否可以删除现有数据库和表</span><br><span class="line">           Grant_priv: N		#是否可以将自己的权限再授予其他用户</span><br><span class="line">      References_priv: N		#是否可以创建外键约束</span><br><span class="line">           Index_priv: N		#是否可以创建和删除表索引，用索引查询表</span><br><span class="line">           Alter_priv: N		#是否可以重命名和修改表结构</span><br><span class="line">Create_tmp_table_priv: N		#是否可以创建临时表</span><br><span class="line">     Lock_tables_priv: N		#是否可以使用LOCK TABLES命令阻止对表的访问<span class="operator">/</span>修改;</span><br><span class="line">     Create_view_priv: N		#是否可以创建视图</span><br><span class="line">       Show_view_priv: N		#是否可以创建视图</span><br><span class="line">  Create_routine_priv: N		#是否可以更改或放弃存储过程和函数</span><br><span class="line">   Alter_routine_priv: N		#是否可以修改或删除存储函数及函数</span><br><span class="line">         Execute_priv: N		#是否可以执行存储过程</span><br><span class="line">           Event_priv: N		#是否能否创建、修改和删除事件</span><br><span class="line">         Trigger_priv: N		#是否能否创建和删除触发器</span><br></pre></td></tr></table></figure>
 
+]]></content>
+      <categories>
+        <category>Database</category>
+      </categories>
+      <tags>
+        <tag>[object Object]</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mysql中mysql库详解04--procs_priv表</title>
+    <url>/2021/06/03/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A304-procs_priv%E8%A1%A8/</url>
+    <content><![CDATA[<ul>
+<li>环境基于Centos7.6</li>
+</ul>
+<p>1.procs_priv表作用</p>
+<p>   该表提供查询存储程序的权限信息，该表中记录的权限信息代表着用户是否可以使用这些权限来访问指定的存储程序(存储过程和函数)。</p>
+<p>2.procs_priv详解</p>
+<p>   procs_priv 的表结构如表所示：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>字段类型</th>
+<th>是否为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Host</td>
+<td>char(60)</td>
+<td>NO</td>
+<td>无</td>
+<td>主机名</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>char(64)</td>
+<td>NO</td>
+<td>无</td>
+<td>数据库名</td>
+</tr>
+<tr>
+<td>User</td>
+<td>char(32)</td>
+<td>NO</td>
+<td>无</td>
+<td>用户名</td>
+</tr>
+<tr>
+<td>Routine_name</td>
+<td>char(64)</td>
+<td>NO</td>
+<td>无</td>
+<td>表示存储过程或函数的名称</td>
+</tr>
+<tr>
+<td>Routine_type</td>
+<td>enum(‘FUNCTION’,’PROCEDURE’)</td>
+<td>NO</td>
+<td>无</td>
+<td>表示存储过程或函数的类型，Routine_type 字段有两个值，分别是 FUNCTION 和 PROCEDURE。FUNCTION 表示这是一个函数；PROCEDURE 表示这是一个 存储过程。</td>
+</tr>
+<tr>
+<td>Grantor</td>
+<td>char(93)</td>
+<td>NO</td>
+<td>无</td>
+<td>插入或修改该记录的用户</td>
+</tr>
+<tr>
+<td>Proc_priv</td>
+<td>set(‘Execute’,’Alter Routine’,’Grant’)</td>
+<td>NO</td>
+<td>无</td>
+<td>表示拥有的权限，包括 Execute、Alter Routine、Grant 3种</td>
+</tr>
+<tr>
+<td>Timestamp</td>
+<td>timestamp</td>
+<td>NO</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>表示记录更新时间</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Database</category>
+      </categories>
+      <tags>
+        <tag>[object Object]</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mysql中mysql库详解03--columns_priv表</title>
+    <url>/2021/06/01/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A303-columns-priv%E8%A1%A8/</url>
+    <content><![CDATA[<ul>
+<li>环境基于Centos7.6</li>
+</ul>
+<p>1.columns_priv表作用</p>
+<p>   用户权限管理，针对表的字段、级别、授权进行操作。</p>
+<p>2.columns_priv表查询</p>
+   <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">#对test用户school库下面的sc表的sno,cno字段授予<span class="keyword">select</span>权限，score字段授予update权限</span><br><span class="line"></span><br><span class="line">mysql<span class="operator">&gt;</span> <span class="keyword">grant</span> <span class="keyword">select</span>(sno,cno),update(score) <span class="keyword">on</span> school.sc <span class="keyword">to</span> <span class="string">&#x27;test&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span>;</span><br><span class="line">Query OK, <span class="number">0</span> <span class="keyword">rows</span> affected (<span class="number">0.00</span> sec)</span><br><span class="line"></span><br><span class="line">mysql<span class="operator">&gt;</span> <span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> mysql.columns_priv;</span><br><span class="line"><span class="operator">+</span><span class="comment">-----------+--------+------+------------+-------------+---------------------+-------------+</span></span><br><span class="line"><span class="operator">|</span> Host      <span class="operator">|</span> Db     <span class="operator">|</span> <span class="keyword">User</span> <span class="operator">|</span> Table_name <span class="operator">|</span> Column_name <span class="operator">|</span> <span class="type">Timestamp</span>           <span class="operator">|</span> Column_priv <span class="operator">|</span></span><br><span class="line"><span class="operator">+</span><span class="comment">-----------+--------+------+------------+-------------+---------------------+-------------+</span></span><br><span class="line"><span class="operator">|</span> localhost <span class="operator">|</span> school <span class="operator">|</span> test <span class="operator">|</span> sc         <span class="operator">|</span> sno         <span class="operator">|</span> <span class="number">0000</span><span class="number">-00</span><span class="number">-00</span> <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> <span class="operator">|</span> <span class="keyword">Select</span>      <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> localhost <span class="operator">|</span> school <span class="operator">|</span> test <span class="operator">|</span> sc         <span class="operator">|</span> cno         <span class="operator">|</span> <span class="number">0000</span><span class="number">-00</span><span class="number">-00</span> <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> <span class="operator">|</span> <span class="keyword">Select</span>      <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> localhost <span class="operator">|</span> school <span class="operator">|</span> test <span class="operator">|</span> sc         <span class="operator">|</span> score       <span class="operator">|</span> <span class="number">0000</span><span class="number">-00</span><span class="number">-00</span> <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span> <span class="operator">|</span> Update      <span class="operator">|</span></span><br><span class="line"><span class="operator">+</span><span class="comment">-----------+--------+------+------------+-------------+---------------------+-------------+</span></span><br><span class="line"><span class="number">3</span> <span class="keyword">rows</span> <span class="keyword">in</span> <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></table></figure>
+
+<p>3.columns_priv详解</p>
+<p>   columns_priv 表结构如下表所示：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>字段类型</th>
+<th>是否为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Host</td>
+<td>char(60)</td>
+<td>NO</td>
+<td>无</td>
+<td>主机</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>char(64)</td>
+<td>NO</td>
+<td>无</td>
+<td>数据库名</td>
+</tr>
+<tr>
+<td>User</td>
+<td>char(32)</td>
+<td>NO</td>
+<td>无</td>
+<td>用户名</td>
+</tr>
+<tr>
+<td>Table_name</td>
+<td>char(64)</td>
+<td>NO</td>
+<td>无</td>
+<td>表名</td>
+</tr>
+<tr>
+<td>Column_name</td>
+<td>char(64)</td>
+<td>NO</td>
+<td>无</td>
+<td>数据列名称，用来指定对哪些数据列具有操作权限</td>
+</tr>
+<tr>
+<td>Timestamp</td>
+<td>timestamp</td>
+<td>NO</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>修改该记录的时间</td>
+</tr>
+<tr>
+<td>Column_priv</td>
+<td>set(‘Select’,’Insert’,’Update’,’References’)</td>
+<td>NO</td>
+<td>无</td>
+<td>表示对表中的列的操作权限，包括 Select、Insert、Update 和 References</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Database</category>
+      </categories>
+      <tags>
+        <tag>[object Object]</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mysql中mysql库详解05--tables_priv表</title>
+    <url>/2021/06/05/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A305-tables_priv%E8%A1%A8/</url>
+    <content><![CDATA[<ul>
+<li>环境基于Centos7.6</li>
+</ul>
+<p>1.tables_priv表作用</p>
+<p>   tables_priv 表用来对单个表进行权限设置，columns_priv 表用来对单个数据列进行权限设置。</p>
+<p>2.tables_priv详解</p>
+<p>   tables_priv 表结构如下表所示：</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>字段类型</th>
+<th>是否为空</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Host</td>
+<td>char(60)</td>
+<td>NO</td>
+<td>无</td>
+<td>主机</td>
+</tr>
+<tr>
+<td>Db</td>
+<td>char(64)</td>
+<td>NO</td>
+<td>无</td>
+<td>数据库名</td>
+</tr>
+<tr>
+<td>User</td>
+<td>char(32)</td>
+<td>NO</td>
+<td>无</td>
+<td>用户名</td>
+</tr>
+<tr>
+<td>Table_name</td>
+<td>char(64)</td>
+<td>NO</td>
+<td>无</td>
+<td>表名</td>
+</tr>
+<tr>
+<td>Grantor</td>
+<td>char(93)</td>
+<td>NO</td>
+<td>无</td>
+<td>修改该记录的用户</td>
+</tr>
+<tr>
+<td>Timestamp</td>
+<td>timestamp</td>
+<td>NO</td>
+<td>CURRENT_TIMESTAMP</td>
+<td>修改该记录的时间</td>
+</tr>
+<tr>
+<td>Table_priv</td>
+<td>set(‘Select’,’Insert’,’Update’,’Delete’,’ Create’,’Drop’,’Grant’,’References’, ‘Index’,’Alter’,’Create View’,’Show view’,’Trigger’)</td>
+<td>NO</td>
+<td>无</td>
+<td>表示对表的操作权限，包括 Select、Insert、Update、Delete、Create、Drop、Grant、References、Index 和 Alter 等</td>
+</tr>
+<tr>
+<td>Column_priv</td>
+<td>set(‘Select’,’Insert’,’Update’,’References’)</td>
+<td>NO</td>
+<td>无</td>
+<td>表示对表中的列的操作权限，包括 Select、Insert、Update 和 References</td>
+</tr>
+</tbody></table>
 ]]></content>
       <categories>
         <category>Database</category>
