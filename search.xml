@@ -1325,4 +1325,38 @@
         <tag>Mysql</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Mysql中mysql库详解08--event表</title>
+    <url>/2021/06/11/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A308-event%E8%A1%A8/</url>
+    <content><![CDATA[<ul>
+<li>环境基于Centos7.6</li>
+</ul>
+<p>1.event表作用</p>
+<p>   Event，事件，是MySQL在相应的时刻调用的过程式数据库对象。一个事件可调用一次，也可周期性的启动，它由一个特定的线程来管理的，也就是“事件管理器”。</p>
+<p>2.event表详解</p>
+<p>   事件的优缺点：</p>
+<ul>
+<li><p>优点：</p>
+<p>一些对数据定时性操作不再依赖外部程序，而直接使用数据库本身提供的功能，可以实现每秒钟执行一个任务，这在一些对实时性要求较高的环境下就非常使用</p>
+</li>
+<li><p>缺点：</p>
+</li>
+</ul>
+<p>​       定时触发，不可以直接调用。</p>
+<p>   事件和触发器：</p>
+<p>   事件和触发器类似，都是在某些事情发生的时候启动。当数据库上启动一条语句的时候，触发器就启动了，而事件是根据调度事件来启动的。由于他们彼此相似，所以事件也称为临时性触发器。</p>
+<p>   事件的开启：</p>
+<p>   –event_scheduler,event_scheduler</p>
+<p>   根据文档，event_scheduler既是服务选项也是系统变量，那么就既可以在配置文件中写上它从而开启，也可以通过SET global event_scheduler=1 来开启，当然变量方式开启是临时的。</p>
+<p>   通过查看线程命令可以看到event的线程 show processlist;</p>
+   <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">#创建Event</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> </span><br><span class="line">    [DEFINER = &#123;USER|CURRENT_USER&#125;]</span><br><span class="line">    EVENT</span><br><span class="line">    [IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>]</span><br><span class="line">    event_name</span><br><span class="line">    <span class="keyword">ON</span> SCHEDULER scheduler #注释<span class="number">1</span></span><br><span class="line">    [<span class="keyword">ON</span> COMPLETION [<span class="keyword">NOT</span>] PRESERVE] #注释<span class="number">2</span></span><br><span class="line">    [ENABLE <span class="operator">|</span> DISABLE <span class="operator">|</span> DISABLE <span class="keyword">ON</span> SLAVE] #注释<span class="number">3</span></span><br><span class="line">    [COMMENT <span class="string">&#x27;comment&#x27;</span>] #这句就是代表注释的意思</span><br><span class="line">    DO event_body #注释<span class="number">4</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Database</category>
+      </categories>
+      <tags>
+        <tag>Mysql</tag>
+      </tags>
+  </entry>
 </search>
