@@ -1304,6 +1304,31 @@
     
     
     <entry>
+      <title>Docker容器与宿主机同网段且可通信</title>
+      <link href="2021/03/27/%E9%85%8D%E7%BD%AEDocker%E5%AE%B9%E5%99%A8%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%9C%BA%E5%90%8C%E7%BD%91%E6%AE%B5/"/>
+      <url>2021/03/27/%E9%85%8D%E7%BD%AEDocker%E5%AE%B9%E5%99%A8%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%9C%BA%E5%90%8C%E7%BD%91%E6%AE%B5/</url>
+      
+        <content type="html"><![CDATA[<ul><li>基于Ubuntu20.04.01</li></ul><p>1.创建docker macvlan虚拟网卡</p><p>   假设宿主机网段为192.168.3.x网段，基础镜像为ubuntu20.04。</p>   <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">查看docker虚拟网卡</span></span><br><span class="line">docker network ls</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">创建docker macvlan虚拟网卡</span></span><br><span class="line"><span class="meta">#</span><span class="bash">注意网段与网卡名称</span></span><br><span class="line">docker network create -d macvlan --subnet=192.168.3.0/24 --ip-range=192.168.3.220/24 -o macvlan_mode=bridge -o parent=ens33 macvlan</span><br></pre></td></tr></table></figure><p>2.创建与宿主机同网段docker容器</p>   <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">拉取ubuntu20.04镜像</span></span><br><span class="line">docker pull ubuntu:20.04</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">查看镜像</span></span><br><span class="line">docker images</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">创建运行容器</span></span><br><span class="line"><span class="meta">#</span><span class="bash">--ip参数后的地址，为容器的IP地址</span></span><br><span class="line">docker run -itd --network=macvlan --ip=192.168.3.202 --name=test ubuntu:20.04</span><br></pre></td></tr></table></figure><p>3.使macvlan模式的容器与宿主机通信</p><p>   由于macvlan模式宿主机和容器是没办法直接进行网络通信。</p><p>   需要在宿主机上再建立一个macvlan，然后修改路由，使数据经由该macvlan传输到容器内的macvlan即可，macvlan之间是可以互相通信的。</p><p>   <strong>以下操作都在宿主机上运行</strong></p>   <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">新增一个叫mynet(不要和容器的macvlan重名)的macvlan接口</span></span><br><span class="line">ip link add mynet link ens33 type macvlan mode bridge</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">为该接口分配ip网段，并启用</span></span><br><span class="line"><span class="meta">#</span><span class="bash">添加200网段</span></span><br><span class="line">ip addr add 192.168.3.200 dev mynet</span><br><span class="line">ip link set mynet up</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">修改路由，使宿主机到192.168.3.200的通信全部经由mynet进行</span></span><br><span class="line"><span class="meta">#</span><span class="bash">添加容器IP</span></span><br><span class="line">ip route add 192.168.3.202 dev mynet</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python关于pyc</title>
       <link href="2020/01/04/Python%E5%85%B3%E4%BA%8Epyc/"/>
       <url>2020/01/04/Python%E5%85%B3%E4%BA%8Epyc/</url>
