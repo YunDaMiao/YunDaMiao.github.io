@@ -2,7 +2,7 @@
 <li>基于Centos7.6</li>
 </ul>
 <p>1.元数据</p>
-   <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">所谓元数据，就是表示数据的数据，这些数据五花八门，总之，只要不是我们存储到数据库里的数据，大多都可以理解为元数据。描述数据库的任何数据,作为数据库内容的对立面,是元数据。因此，列名、数据库名、用户名、版本名以及从SHOW语句得到的结果中的大部分字符串是元数据。还包括INFORMATION_SCHEMA数据库中的表中的内容，因为定义的那些表存储了关于数据库对象的信息。</span><br></pre></td></tr></table></figure>
+   <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">所谓元数据，就是表示数据的数据，这些数据五花八门，总之，只要不是我们存储到数据库里的数据，大多都可以理解为元数据。</span><br><span class="line">描述数据库的任何数据,作为数据库内容的对立面,是元数据。</span><br><span class="line">因此，列名、数据库名、用户名、版本名以及从SHOW语句得到的结果中的大部分字符串是元数据。</span><br><span class="line">还包括INFORMATION_SCHEMA数据库中的表中的内容，因为定义的那些表存储了关于数据库对象的信息。</span><br></pre></td></tr></table></figure>
 
    <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">元数据是存储在“基表”中。</span><br><span class="line">通过专用的DDR/DCL语句进行修改。通过专用视图或命令进行元数据的查询。</span><br><span class="line">information_schema中保存了大量元数据的视图。</span><br><span class="line">show语句提供封装好的，用于元数据基本查询功能。</span><br></pre></td></tr></table></figure>
 
