@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://example.com/2021/10/25/test/</loc>
+    
+    <lastmod>2021-10-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/07/23/Mysql%20%E6%B3%A8%E9%87%8A%EF%BC%88comment%EF%BC%89%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2021-09-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/07/17/Mysql%E6%89%A7%E8%A1%8C%E8%AE%A1%E5%88%921-%E6%89%A7%E8%A1%8C%E8%AE%A1%E5%88%92%E4%BD%93%E7%B3%BB%E4%B8%8E%E6%89%A7%E8%A1%8C%E8%AE%A1%E5%88%92%E5%AD%97%E6%AE%B5%E8%AF%A6%E8%A7%A3/</loc>
+    
+    <lastmod>2021-09-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/07/15/Mysql%E7%B4%A2%E5%BC%953-%E7%B4%A2%E5%BC%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%AE%A1%E7%90%86/</loc>
+    
+    <lastmod>2021-09-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/07/13/Mysql%E7%B4%A2%E5%BC%952-%E5%B8%B8%E7%94%A8Btree%E7%B4%A2%E5%BC%95/</loc>
+    
+    <lastmod>2021-09-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/07/11/Mysql%E7%B4%A2%E5%BC%951-%E7%B4%A2%E5%BC%95%E4%BB%8B%E7%BB%8D/</loc>
+    
+    <lastmod>2021-09-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/07/21/%E4%BF%AE%E6%94%B9docker-machine%E9%BB%98%E8%AE%A4IP/</loc>
+    
+    <lastmod>2021-09-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/07/19/Docker%E9%83%A8%E7%BD%B2MySQL%EF%BC%8C%E5%BF%98%E8%AE%B0root%E5%AF%86%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2021-09-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/02/MySQL5.7%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    
+    <lastmod>2021-07-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/07/09/SQL%E5%85%83%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96/</loc>
+    
+    <lastmod>2021-07-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/03/23/Ubuntu20-04%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%8F%8C%E7%BD%91%E5%8D%A1%E5%8F%8CIP%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2021-07-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/03/25/%E4%BF%AE%E6%94%B9%E5%B7%B2%E8%BF%90%E8%A1%8CDocker%E5%AE%B9%E5%99%A8%E7%9A%84%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB/</loc>
+    
+    <lastmod>2021-06-30</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/16/SQL%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8-DQL(%E6%95%B0%E6%8D%AE%E7%9A%84%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80)%E5%BA%94%E7%94%A82/</loc>
+    
+    <lastmod>2021-06-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/03/27/%E9%85%8D%E7%BD%AEDocker%E5%AE%B9%E5%99%A8%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%9C%BA%E5%90%8C%E7%BD%91%E6%AE%B5/</loc>
+    
+    <lastmod>2021-06-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/07/07/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A321-proxies-priv%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/07/05/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A320-time-zone%E3%80%81time-zone-leap-second%E3%80%81time-zone-name%E3%80%81time-zone-transition%E3%80%81time-zone-transition-type%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/07/03/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A319-slow_log%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/07/01/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A318-slave_master_info%E3%80%81slave_relay_log_info%E3%80%81slave_worker_info%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/29/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A317-servers%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/27/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A316-proc%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-09</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/25/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A315-plugin%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/23/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A314-ndb_binlog_index%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/21/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A313-innodb_index_stats%E3%80%81innodb_table_stats%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/19/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A312-help_category%E3%80%81help_keyword%E3%80%81help_relation%E3%80%81help_topic%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/17/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A311-gtid_executed%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/15/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A310-general_log%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/13/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A309-func%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/11/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A308-event%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/07/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A306-engine_cost%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/09/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A307-server_cost%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/05/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A305-tables_priv%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/03/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A304-procs_priv%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/06/01/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A303-columns_priv%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/30/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A302-db%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/28/Mysql%E4%B8%ADmysql%E5%BA%93%E8%AF%A6%E8%A7%A301-user%E8%A1%A8/</loc>
+    
+    <lastmod>2021-06-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/26/Centos7%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AFMySQL%E6%9C%8D%E5%8A%A1/</loc>
+    
+    <lastmod>2021-05-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2020/01/01/Python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    
+    <lastmod>2021-05-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/14/SQL%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8-DQL(%E6%95%B0%E6%8D%AE%E7%9A%84%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80)%E5%BA%94%E7%94%A81/</loc>
+    
+    <lastmod>2021-05-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/24/SQL%E7%B4%A2%E5%BC%95%E5%9F%BA%E7%A1%803/</loc>
+    
+    <lastmod>2021-05-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/22/SQL%E7%B4%A2%E5%BC%95%E5%9F%BA%E7%A1%802/</loc>
+    
+    <lastmod>2021-05-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/20/SQL%E7%B4%A2%E5%BC%95%E5%9F%BA%E7%A1%801/</loc>
+    
+    <lastmod>2021-05-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/18/SQL%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8-DQL(%E6%95%B0%E6%8D%AE%E7%9A%84%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80)%E5%BA%94%E7%94%A83/</loc>
+    
+    <lastmod>2021-05-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/12/SQL%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8-DML(%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C%E8%AF%AD%E8%A8%80)%E5%BA%94%E7%94%A8/</loc>
+    
+    <lastmod>2021-05-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/10/SQL%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8-DCL(%E6%95%B0%E6%8D%AE%E6%8E%A7%E5%88%B6%E8%AF%AD%E8%A8%80)%E5%BA%94%E7%94%A8/</loc>
+    
+    <lastmod>2021-05-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2020/01/04/Python%E5%85%B3%E4%BA%8Epyc/</loc>
+    
+    <lastmod>2021-05-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2020/01/03/Python%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</loc>
+    
+    <lastmod>2021-05-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2020/01/02/Python%E5%8F%98%E9%87%8F/</loc>
+    
+    <lastmod>2021-05-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/08/SQL%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8-DDL(%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80)%E5%BA%94%E7%94%A8/</loc>
+    
+    <lastmod>2021-04-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/06/SQL%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8--%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E3%80%81%E8%A1%A8%E5%B1%9E%E6%80%A7%E3%80%81%E5%AD%97%E7%AC%A6%E9%9B%86/</loc>
+    
+    <lastmod>2021-04-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/04/SQL%E5%9F%BA%E7%A1%80%E5%BA%94%E7%94%A8--SQL%E4%BB%8B%E7%BB%8D%E3%80%81SQL%E5%88%86%E7%B1%BB%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84/</loc>
+    
+    <lastmod>2021-04-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/24/MySQL5.7%E5%9F%BA%E7%A1%80%E7%AE%A1%E7%90%86--%E8%BF%9E%E6%8E%A5%E7%AE%A1%E7%90%86%E3%80%81%E5%86%85%E7%BD%AE%E5%8A%9F%E8%83%BD%E3%80%81%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2021-04-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/26/MySQL5.7%E5%9F%BA%E7%A1%80%E7%AE%A1%E7%90%86-%E5%A4%9A%E5%AE%9E%E4%BE%8B%E5%BA%94%E7%94%A8/</loc>
+    
+    <lastmod>2021-04-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/16/MySQL5.7%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84/</loc>
+    
+    <lastmod>2021-04-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/05/02/MariaDB10.5.8%E9%85%8D%E7%BD%AEKeepalived/</loc>
+    
+    <lastmod>2021-04-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/30/MariaDB10.5.8%E6%94%AF%E6%8C%81%E4%B8%AD%E6%96%87%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2021-04-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/28/MariaDB10.5.8%E9%85%8D%E7%BD%AE%E4%B8%BB%E4%B8%BB%E6%A8%A1%E5%BC%8F/</loc>
+    
+    <lastmod>2021-04-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/16/MySQL5.7%E5%9F%BA%E7%A1%80%E7%AE%A1%E7%90%86--%E7%94%A8%E6%88%B7%E3%80%81%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/</loc>
+    
+    <lastmod>2021-04-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/03/31/MySQL5.7%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E8%A3%85/</loc>
+    
+    <lastmod>2021-04-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/04/MySQL5.7%E6%9C%AC%E5%9C%B0%E7%AE%A1%E7%90%86%E5%91%98%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81%E5%BF%98%E8%AE%B0%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2021-04-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/14/MySQL5.7%E4%B8%ADCS%E6%A8%A1%E5%9E%8B%20%E5%AE%9E%E4%BE%8B%E4%BB%8B%E7%BB%8D%20mysqld%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84/</loc>
+    
+    <lastmod>2021-04-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/22/Redhat8.3%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85MariaDB/</loc>
+    
+    <lastmod>2021-04-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/20/Redhat8.3%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85Docker/</loc>
+    
+    <lastmod>2021-04-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/18/Redhat8.3%E7%BD%91%E5%8D%A1%E9%85%8D%E7%BD%AE%E3%80%81%E5%85%B3%E9%97%AD%E9%98%B2%E7%81%AB%E5%A2%99%E5%92%8CSelinux%E3%80%81%E9%85%8D%E7%BD%AEyum%E5%9C%A8%E7%BA%BF%E6%BA%90/</loc>
+    
+    <lastmod>2021-04-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/03/29/MariaDB%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E8%A3%85/</loc>
+    
+    <lastmod>2021-04-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/12/Docker%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E8%A3%85/</loc>
+    
+    <lastmod>2021-04-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/10/Centos7%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%85Docker%E7%8E%AF%E5%A2%83/</loc>
+    
+    <lastmod>2021-04-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/08/MySQL%E5%AD%A6%E4%B9%A0%E9%9C%80%E8%A6%81%E6%8E%8C%E6%8F%A1%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+    
+    <lastmod>2021-04-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/04/06/Docker%E5%AE%B9%E5%99%A8%E5%86%85%E9%83%A8%E6%9B%B4%E6%8D%A2%E5%9C%A8%E7%BA%BF%E6%BA%90&%E5%AE%89%E8%A3%85%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</loc>
+    
+    <lastmod>2021-04-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/about/index.html</loc>
+    
+    <lastmod>2021-03-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/index.html</loc>
+    
+    <lastmod>2021-03-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/index.html</loc>
+    
+    <lastmod>2021-03-22</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>http://example.com/</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>http://example.com/tags/MariaDB/</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Mysql/</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Docker/</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Redhat/</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Python/</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>http://example.com/categories/Linux/</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/Database/</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/Code/</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>
