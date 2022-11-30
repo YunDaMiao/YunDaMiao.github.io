@@ -501,7 +501,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -509,35 +509,35 @@
   
   <url>
     <loc>http://example.com/tags/MariaDB/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Mysql/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Docker/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Redhat/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Python/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -546,21 +546,21 @@
   
   <url>
     <loc>http://example.com/categories/Linux/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/Database/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/Code/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
