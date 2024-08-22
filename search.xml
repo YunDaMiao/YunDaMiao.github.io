@@ -2148,8 +2148,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Oracle-11G基础-查看数据库状态</title>
-    <url>/2016/01/02/Oracle-11G%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%8A%B6%E6%80%81/</url>
+    <title>Oracle--11G基础-查看数据库状态</title>
+    <url>/2016/01/02/Oracle-11G%E5%9F%BA%E7%A1%80--%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%8A%B6%E6%80%81/</url>
     <content><![CDATA[<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SQL</span><span class="operator">&gt;</span> <span class="keyword">select</span> instance_name,status,database_status <span class="keyword">from</span> v$instance;</span><br><span class="line"></span><br><span class="line">INSTANCE_NAME		STATUS       	DATABASE_STATUS</span><br><span class="line"><span class="comment">---------------- 	------------ 	-----------------</span></span><br><span class="line">orcl		 		<span class="keyword">OPEN</span>	      	ACTIVE</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <hr>
