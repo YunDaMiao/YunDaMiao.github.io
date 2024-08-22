@@ -2147,4 +2147,26 @@
         <tag>Oracle</tag>
       </tags>
   </entry>
+  <entry>
+    <title>11G基础-查看数据库状态</title>
+    <url>/0216/01/02/11G%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E7%8A%B6%E6%80%81/</url>
+    <content><![CDATA[<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SQL</span><span class="operator">&gt;</span> <span class="keyword">select</span> instance_name,status,database_status <span class="keyword">from</span> v$instance;</span><br><span class="line"></span><br><span class="line">INSTANCE_NAME		STATUS       	DATABASE_STATUS</span><br><span class="line"><span class="comment">---------------- 	------------ 	-----------------</span></span><br><span class="line">orcl		 		<span class="keyword">OPEN</span>	      	ACTIVE</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">INSTANCE_NAME:数据库实例名</span><br><span class="line">指用标识数据库实例的名称，其缺省值通常就是ORACLE_SID。区别在于INSTANCE_NAME参数是Oracle数据库的参数，此参数可在参数文件中查询到；而ORACLE_SID是操作系统环境变量，用于和操作系统交互。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">STATUS:数据库实例状态</span><br><span class="line">Oracle数据库实例的四种状态：</span><br><span class="line"><span class="number">1.</span>shutdown：</span><br><span class="line">该状态下数据库实例处于完全关闭</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span>NOMOUNT：</span><br><span class="line">该状态下数据库实例读取控制文件以了解数据库基本信息，如数据库名称、数据文件、日志文件位置等</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>MOUNT：</span><br><span class="line">该状态下数据库实例已经成功连接到控制文件并获取了数据库的结构和配置信息。系统改变号（SCN）已经具体确定，并且数据库实例指导从哪个SCN开始进行回复。</span><br><span class="line">该状态下可以执行一些管理操作，如恢复数据库、修改数据库结构等操作。但改状态下用户不能直接访问数据库中的数据，因为数据文件尚未加载到内存中。</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span><span class="keyword">OPEN</span>：</span><br><span class="line">该状态下数据库实例已经成功加载了数据文件和日志文件的内容，并使其在内存中可用。</span><br><span class="line">该状态下用户可正常访问和操作数据库，数据库可用接受用户的查询和事务请求，并返回相应的结果。且数据库可用执行完整的事务处理任务，包括增删改查操作。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">DATABASE_STATUS:数据库状态</span><br><span class="line">通常用于描述数据库本身的状态，体现表示数据库的运行状态，反映数据库当前是否能够接受用户连接和操作。</span><br><span class="line">常见状态包括：</span><br><span class="line"><span class="number">1.</span>ACTIVE：数据库处于活动状态，能够接受和处理用户请求。</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>QUIESCING：数据库正在进入安静模式，限制新的用户连接。</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span>QUIESCED`：数据库处于安静模式，仅允许DBA连接，其他用户连接被限制。</span><br><span class="line"></span><br><span class="line"><span class="number">4.</span>SUSPENDED`：数据库暂时挂起，无法处理新的事务。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">status参数：描述实例状态，反映数据库实例本身的启动、挂载和打开情况。</span><br><span class="line">database_status参数：描述数据库的运行状态，反映数据库是否处于活动、限制连接或挂起状态。</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Database</category>
+      </categories>
+      <tags>
+        <tag>Oracle</tag>
+      </tags>
+  </entry>
 </search>
